@@ -56,7 +56,7 @@ module.exports = {
     /**
      * Set preferred indentation to 2.
      */
-    indent: ['error', 2],
+    indent: 'off',
     /**
      * Unix linebreaks for files: \n
      */

@@ -48,7 +48,7 @@ Add these scripts:
 
     "scripts": {
         "lint": "concurrently --kill-others-on-fail \"npm:lint:*\"",
-        "lint:prettier": "prettier --check --loglevel=warn src",
+        "lint:prettier": "prettier --check --log-level=warn src",
         "lint:tsc": "tsc --noEmit",
         "lint:eslint": "eslint --ext=js,jsx,ts,tsx --max-warnings=0 src",
         "format": "prettier --write src && eslint --ext=js,jsx,ts,tsx --fix src",
