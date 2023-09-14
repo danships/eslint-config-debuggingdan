@@ -18,11 +18,7 @@ module.exports = {
   ],
   plugins: ['only-warn', 'import'],
   rules: {
-    /**
-     * Typescript isn"t as smart as it thinks it is. "explicit" any"s are allowed.
-     * But when a type is possible it"s strongly recommended to use or write that type.
-     */
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'on',
 
     /**
      * Allow `for of` syntax.
@@ -119,6 +115,24 @@ module.exports = {
         alphabetize: {
           order: 'asc',
           caseInsensitive: true,
+        },
+      },
+    ],
+    'unicorn/prefer-module': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    'unicorn/prefer-top-level-await': 'off',
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        allowList: {
+          res: true,
+          req: true,
         },
       },
     ],

@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['eslin-config-preact', './common'].map(require.resolve),
+  extends: ['eslint-config-preact', './common'].map(require.resolve),
 };
