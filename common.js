@@ -18,7 +18,7 @@ module.exports = {
   ],
   plugins: ['only-warn', 'import'],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'on',
+    '@typescript-eslint/no-explicit-any': 2,
 
     /**
      * Allow `for of` syntax.
