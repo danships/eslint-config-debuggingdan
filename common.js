@@ -118,6 +118,10 @@ module.exports = {
         },
       },
     ],
+    /* ESLint can be configured to report variables with the same name in the same file. */
+    'no-redeclare': 'error',
+    /* if you want to catch cases where variables are declared in different scopes but have the same name, you can use the no-shadow rule. */
+    'no-shadow': 'error',
     'unicorn/prefer-module': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
