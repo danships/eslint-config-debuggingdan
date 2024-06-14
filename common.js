@@ -58,9 +58,9 @@ module.exports = {
      */
     'linebreak-style': ['error', 'unix'],
     /**
-     * Prefer single quotes.
+     * Let quotes be handled by prettier
      */
-    quotes: ['error', 'single'],
+    quotes: 'off',
     /**
      * Require promises to be `awaited`, unless they are explicitly prefixed with `void`
      */
