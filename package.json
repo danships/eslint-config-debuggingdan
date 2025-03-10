@@ -1,19 +1,24 @@
 {
   "name": "eslint-config-debuggingdan",
-  "version": "2.0.0",
-  "main": "common.js",
+  "version": "3.0.1",
+  "type": "module",
+  "main": "eslint.config.js",
+  "exports": "./eslint.config.js",
   "files": [
-    "common.js",
+    "eslint.config.js",
     ".editorconfig",
     ".prettierrc.json"
   ],
   "peerDependencies": {
+    "@eslint/js": ">=9.0.0",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
-    "eslint": "*",
+    "eslint": ">=9.0.0",
     "eslint-import-resolver-typescript": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-only-warn": "*",
-    "eslint-plugin-unicorn": "*"
+    "eslint-plugin-unicorn": "*",
+    "globals": "*",
+    "typescript-eslint": "*"
   }
 }
