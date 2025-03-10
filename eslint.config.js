@@ -5,13 +5,15 @@ import unicornPlugin from 'eslint-plugin-unicorn';
 import importPlugin from 'eslint-plugin-import';
 import onlyWarnPlugin from 'eslint-plugin-only-warn';
 
-export default [
+export default tseslint.config(
   // Base JS configuration
   js.configs.recommended,
 
-  // TypeScript configurations
-  ...tseslint.configs.recommended,
-  ...tseslint.configs.recommendedRequiringTypeChecking,
+  // TypeScript configurations - use the correct format for typescript-eslint v7
+  tseslint.configs.recommended,
+
+  // Use the correct config for type checking in typescript-eslint v7
+  tseslint.configs.recommendedTypeChecked,
 
   // Global settings for all files
   {
@@ -22,6 +24,7 @@ export default [
       parserOptions: {
         project: true,
         sourceType: 'module',
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     plugins: {
@@ -157,5 +160,5 @@ export default [
       '@typescript-eslint/no-var-requires': 'off',
       'global-require': 'off',
     },
-  },
-];
+  }
+);
