@@ -13,23 +13,18 @@
         eslint-plugin-import \
         eslint-import-resolver-typescript \
         eslint-plugin-unicorn \
-        eslint-config-daangemist
-
-On a preact project, also run:
-
-    npm install --save-dev \
-        eslint-config-preact
+        eslint-config-debuggingdan
 
 ### Prettier
 
-Add `"prettier": "eslint-config-daangemist/.prettierrc"` to your `package.json`
+Add `"prettier": "eslint-config-debuggingdan/.prettierrc"` to your `package.json`
 
 ### Eslint
 
 Create an `.eslintrc` with:
 
     {
-        "extends": ["daangemist"],
+        "extends": ["debuggingdan"],
         "env": {
             "browser": true,
             "node": true
@@ -39,8 +34,6 @@ Create an `.eslintrc` with:
             "project": "./tsconfig.json"
         }
     }
-
-When using project, change `daangemist` into `daangemist/preact`
 
 ### Npm scripts
 
@@ -70,4 +63,4 @@ indent_style = space
 indent_size = 2
 ```
 
-Download it using: `wget https://unpkg.com/eslint-config-daangemist/.editorconfig`.
+Download it using: `wget https://unpkg.com/eslint-config-debuggingdan/.editorconfig`.

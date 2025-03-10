@@ -140,6 +140,8 @@ module.exports = {
         },
       },
     ],
+    /* Always require curly braces */
+    curly: 'error',
   },
   overrides: [
     {
